@@ -24,7 +24,7 @@
       ansible.builtin.shell: dpkg -i /home/host/grafana_11.0.0_amd64.deb
 
 
-   - name: daemon reload
+    - name: daemon reload
       become: yes
       systemd:
         daemon-reload: true
